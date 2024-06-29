@@ -97,9 +97,8 @@ logging.pattern.console=%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ} [%thread] %-5level %logge
 Example of log
 
 ```
-2022-06-09T09:56:22.037+0200 [reactor-http-epoll-4] DEBUG t.m.i.s.s.service.solr.SolrService -  864365593117de60] - 864365593117de60] - message: "MLT 1591364026 Query:  => POST (max timeout 4000 ms) http://localhost:8983/solr/powersearch/select, BodyFormData={defType=[edismax], omitHeader=[true], start=[0], wt=[jSON], stopwords=[true], fq=[(parentalRating:[0 TO *] OR (*:* NOT parentalRating:[* TO *])), contentRepresentative:true], q=[ninja MLT_tom_cruise MLT_harrison_ford MLT_pepe], qf=[mltGenre3^8000 mltGenre2^6000 mltGenre1^4000 mltGenre0^2000 titlesIs^10 mltActors^50 mltDirectors^20], fl=[contentReference,score], rows=[32]} => Response StatusCode:200 OK. Duration:6 ms Response List Size 32"
+2022-06-09T09:56:22.037+0200 [reactor-http-epoll-4] DEBUG t.m.i.s.s.service.MyService -  864365593117de60] - 864365593117de60] - message: "my log message"
  
-2022-06-09T09:56:22.037+0200 [reactor-http-epoll-4] INFO  t.m.i.s.s.s.r.ReactiveResponseEntityTransformerService -  864365593117de60] - 864365593117de60] - message: "MLT 1591364026 Request /iris/powersearch-internal/mlt [GET] PARAMETERS: RequestForMLT(requestId=1591364026, rows=null, parentalRatingRange=null, mltGenres=194,177,176, mltTitles=ninja, mltActors=tom cruise, harrison ford, mltDirectors=pepe, mltTags=null, requestInstant=2022-06-09T07:56:22.031Z, uri=/iris/powersearch-internal/mlt, method=GET) Duration 6 ms. HTTPStatus Responsed: 200 OK"
 ```
 
 Besides, Sleuth provides a Tracer class that allows to manage Sleuth behaviour, for example the following code creates  a new TraceId in case it is required.
