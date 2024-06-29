@@ -1,13 +1,13 @@
-# TechTalk: Sleuth-for-Tracing
+# TechTalk: Sleuth for Tracing
 
-* [Introduction]
-* [How it works]
-* [Digging Deeper]
-* [Integrating in a existing WebFlux Project] 
-* [Integration in Others Spring Boot components]
-* [Integrating in an existing no Spring Boot Project] 
-* [Future use (Rabbit)]
-* [Zipkin]
+* [Introduction](#introduction)
+* [How it works](#how-it-works)
+* [Digging Deeper](#digging-deeper)
+* [Integrating in a existing WebFlux Project](#integrating-in-a-existing-webflux-project) 
+* [Integration in Others Spring Boot components](#integrating-in-an-existing-no-spring-boot-project)
+* [Integrating in an existing no Spring Boot Project](#integrating-in-an-existing-no-spring-boot-project) 
+* [Future use (Rabbit)](#future-use-rabbit)
+* [Zipkin](#zipkin)
 
 ## Introduction
 [
